@@ -1,0 +1,35 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use App\User;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $userData = [
+            [
+               'name'=>'Admin',
+               'email'=>'satishadmin@hotmail.com',
+                'is_admin'=>'1',
+               'password'=> 'satishadmin',
+            ],
+            [
+               'name'=>'Regular User',
+               'email'=>'user@gmail.com',
+                'is_admin'=>'0',
+               'password'=> 'satishuser',
+            ],
+        ];
+  
+        foreach ($userData as $key => $val) {
+            User::create($val);
+        }
+    }
+    
+}
