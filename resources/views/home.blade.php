@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header">Dashboard</div>
 
-				{{session()->all()}};
+				
 
 
                 <div class="card-body">
