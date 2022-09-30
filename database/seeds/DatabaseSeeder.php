@@ -17,13 +17,13 @@ class DatabaseSeeder extends Seeder
                'name'=>'Admin',
                'email'=>'satishadmin@hotmail.com',
                 'is_admin'=>'1',
-               'password'=> 'satishadmin',
+               'password'=> bcrypt('12345678'),
             ],
             [
                'name'=>'Regular User',
                'email'=>'user@gmail.com',
                 'is_admin'=>'0',
-               'password'=> 'satishuser',
+               'password'=> bcrypt('12345678'),
             ],
         ];
   
