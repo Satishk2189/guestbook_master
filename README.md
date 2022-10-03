@@ -33,12 +33,10 @@ please refer user table for admin credentials.
 php artisan server
 
 
-
 **To start the server You can also register as a new user and login**
 
 please refer user table for admin credentials or use below credentials.
-Email: satishkilariadmin@hotmail.com
-Password: WelcomE@12022
+
 
 **To run PHP Unit Tests**
 
