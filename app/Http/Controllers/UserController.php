@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Redirect;
-use App\UserClaim;
+use Auth;
+use App\Models\UserClaim;
 
 class UserController extends Controller
 {
@@ -22,19 +23,19 @@ class UserController extends Controller
             'amount' => ['required', 'string', 'integer', 'min:1'],
         ]);
     }
+	
     /**
      * @param Request $request
      */
     public function saveNewClaim(Request $request)
     {
-		
-		UserClaim::create([
+        UserClaim::create([
             'description' => $request->description,
             'amount' => $request->amount,
             'user_name' => $request->amount,
-           
+
         ]);
-		return Redirect::back()->with('message','Successful !');
-        
+
+        return Redirect::back()->with('message', 'Successful !');
     }
 }

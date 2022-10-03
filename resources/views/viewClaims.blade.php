@@ -29,7 +29,7 @@
 								@foreach ($claims as $claim)
 								<tr>
 									
-									<td>{{ $claim->name }}</td>
+									<td>{{ $claim->user_name }}</td>
 									<td>
 										<span class="badge badge-flat border-grey-800 text-default text-capitalize">
 										{{ $claim->description }}
@@ -77,4 +77,14 @@
         </div>
     </div>
 </div>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	$(function () {
+		 $("#deleteClaimsButton").click(function(){
+			if (!confirm("Do you want to delete")){
+				return false;
+			}
+		});
+	});    
+</script>
 @endsection

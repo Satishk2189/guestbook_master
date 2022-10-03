@@ -16,6 +16,7 @@ class CreateUserClaimsTable extends Migration
         Schema::create('user_claims', function (Blueprint $table) {
             $table->id();
 			$table->string('description');
+			$table->string('user_name');
 			$table->integer('amount');
 			$table->integer('status')->default(0);
             $table->timestamps();

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\User;
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,15 +15,15 @@ class DatabaseSeeder extends Seeder
         $userData = [
             [
                'name'=>'Admin',
-               'email'=>'satishadmin@hotmail.com',
+               'email'=>'satishkilariadmin@hotmail.com',
                 'is_admin'=>'1',
-               'password'=> bcrypt('12345678'),
+               'password'=> bcrypt('WelcomE@12022'),
             ],
             [
                'name'=>'Regular User',
                'email'=>'user@gmail.com',
                 'is_admin'=>'0',
-               'password'=> bcrypt('12345678'),
+               'password'=> bcrypt('WelcomE@12022'),
             ],
         ];
   

@@ -31,7 +31,7 @@
                         <div class="form-group row">
                             <label for="amount" class="col-md-4 col-form-label text-md-right">{{ __('Amount') }}</label>
                             <div class="col-md-6">
-                                <input id="amount" type="textbox" class="form-control @error('amount') is-invalid @enderror" name="amount" required autocomplete="Amount">
+                                <input id="amount" type="number" class="form-control @error('amount') is-invalid @enderror" name="amount" required autocomplete="Amount">
                                 @error('amount')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
