@@ -30,7 +30,7 @@ please refer user table for admin credentials.
 
 **To start the server:**
 
-php artisan server
+PHP artisan serve
 
 
 **To start the server You can also register as a new user and login**
