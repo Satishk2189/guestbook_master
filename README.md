@@ -27,9 +27,8 @@ php artisan db:seed
 
 You can also register as a new user and login.
 please refer user table for admin credentials.
-<<<<<<< HEAD
+
 
 To run PHP Unit Tests  
 php artisan test
-=======
->>>>>>> 3d04c9403132b69d42c53982b876db065d683a65
+
